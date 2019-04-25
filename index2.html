@@ -1,0 +1,181 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>主页</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="">
+<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+
+<!-- Custom Theme files -->
+<link href="css/index/style.css" rel='stylesheet' type='text/css' />
+<link rel="stylesheet" href="css/index/jquery.countdown.css" />
+
+<!--fonts-->
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,800,600,300' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"/>
+<!--//fonts-->
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="js/index/jquery.min.js"></script>
+</head>
+<body style="overflow:hidden;">
+	<div class="w3layouts-banner-slider">
+			<div class="container">
+				<div class="slider">
+					<div class="callbacks_container">
+						<ul class="rslides callbacks callbacks1" id="slider4">
+							<li>
+								<div class="agileits-banner-info">
+									<div class="banner-dot"></div>
+								</div>
+							</li>
+							<li>
+								<div class="agileits-banner-info agileits-banner-info1">
+									<div class="banner-dot"></div>
+								</div>
+							</li>
+							<li>
+								<div class="agileits-banner-info agileits-banner-info2">
+									<div class="banner-dot"></div>
+								</div>
+							</li>
+							<li>
+								<div class="agileits-banner-info agileits-banner-info3">
+									<div class="banner-dot"></div>
+								</div>
+							</li>
+							<li>
+								<div class="agileits-banner-info agileits-banner-info4">
+									<div class="banner-dot"></div>
+								</div>
+							</li>
+							<li>
+								<div class="agileits-banner-info agileits-banner-info5">
+									<div class="banner-dot"></div>
+								</div>
+							</li>
+							<li>
+								<div class="agileits-banner-info agileits-banner-info6">
+									<div class="banner-dot"></div>
+								</div>
+							</li>
+							<li>
+								<div class="agileits-banner-info agileits-banner-info7">
+									<div class="banner-dot"></div>
+								</div>
+							</li>
+							<li>
+								<div class="agileits-banner-info agileits-banner-info8">
+									<div class="banner-dot"></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<script src="js/index/responsiveslides.min.js"></script>
+					<script>
+						// You can also use "$(window).load(function() {"
+						$(function () {
+						  // Slideshow 4
+						  $("#slider4").responsiveSlides({
+							auto: true,
+							pager:true,
+							nav:false,
+							speed: 500,
+							namespace: "callbacks",
+							before: function () {
+							  $('.events').append("<li>before event fired.</li>");
+							},
+							after: function () {
+							  $('.events').append("<li>after event fired.</li>");
+							}
+						  });
+
+						});
+					 </script>
+					<!--banner Slider starts Here-->
+				</div>
+			</div>
+	</div>
+    <div class="bg agile">
+			<div class="more-bar"><p style="color: white;width: 68px;height: 16px;display: block;line-height: 16px;text-align: center;font-weight: bolder;">了解更多</p></div>
+     	<div class="container">
+			<div class="main">
+				<div class="header">
+					<h1>我们的 <span>旅程</span> 是时候 <span>该开始了</span> </h1>
+				</div>
+				<div class="content">
+					<div class="content2">
+						<div class="timer_wrap">
+							<div id="counter"> </div>
+						</div>
+					</div>
+					<div class="content3">
+						<p></p>
+
+						<h2>开始探索这个世界!</h2>
+
+							<div style="width:100%;margin:0;height:60px;padding-top:10px;">
+								<div class="show-login-button" style="width:30%;float:left;padding-right:5%;padding-left: 5%;cursor:pointer;"><p style="font-size:1.3em;font-display: initial;text-align: center;font-weight: bolder;font-family: 'Open Sans', sans-serif;margin: 0;letter-spacing: 10px;line-height:1em;"> 登陆 </p></div>
+								<div class="show-signin-button" style="width:30%;float:right;padding-right:5%;padding-left: 5%;cursor:pointer;"><p style="font-size :1.3em;;font-display: initial;text-align: center;font-weight: bolder;font-family: 'Open Sans', sans-serif;margin: 0;letter-spacing: 10px;line-height:1em;"> 注册 </p></div>
+
+												<div id="response"></div>
+							</div>
+					</div>
+				</div>
+				<!-- <div class="footer">
+					<p>Copyright &copy; 2017.Company name All rights reserved.<a target="_blank" href="http://sc.chinaz.com/moban/">&#x7F51;&#x9875;&#x6A21;&#x677F;</a></p>
+				</div> -->
+			</div>
+        </div>
+	 </div>
+	 <div class="login-box" id="login-box">
+			<div class="hide-box-btn">
+							<i class="fas fa-times-circle"></i>
+			</div>
+			<form action="index.html" class="login-form" method="POST">
+
+					<h1 style="font-family:Microsoft YaHei;font-size:24px;font-weight:bolder">欢迎登陆</h1>
+					<input class="txtbox" type="text" name="" placeholder="QQ号/电话号/邮箱">
+					<input class="txtbox" type="Password" name="" placeholder="密码">
+					<input class="login-btn" type="button" value="登陆">
+			</form>
+	</div>
+	<div class="signin-box" id="signin-box">
+			<div class="hide-box-btn2">
+							<i class="fas fa-times-circle"></i>
+			</div>
+			<form action="index.html" class="signin-form" method="POST">
+
+					<h1 style="font-family:Microsoft YaHei;font-size:24px;font-weight:bolder">欢迎注册</h1>
+					<input class="txtbox2" type="text" name="" placeholder="用户名">
+					<input class="txtbox2" type="text" name="" placeholder="邮箱">
+					<input class="txtbox2" type="text" name="" placeholder="电话号">
+					<input class="txtbox2" type="Password" name="" placeholder="密码">
+					<input class="signin-btn" type="button" value="注册">
+			</form>
+	</div>
+
+<!--js-->
+<script src="js/index/jquery.countdown.js"></script>
+<script src="js/index/script.js"></script>
+<script type="text/javascript">
+	$(".show-login-button").on("click",function(){
+		$(".login-box").toggleClass("showed");
+	});
+	$(".hide-box-btn").on("click",function(){
+		$(".login-box").toggleClass("showed");
+	});
+	$(".show-signin-button").on("click",function(){
+		$(".signin-box").toggleClass("showed2");
+	});
+	$(".hide-box-btn2").on("click",function(){
+		$(".signin-box").toggleClass("showed2");
+	});
+</script>
+<!--js-->
+
+</body>
+</html>

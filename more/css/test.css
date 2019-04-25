@@ -1,0 +1,29 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #060c21;
+    z-index: 200;
+}
+.box{
+    position: relative;
+    width: 300px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #060c21;
+}
+.box::before{
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    content: "";
+    position: absolute;
+    background: #fff;
+    z-index: -1;
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js" charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min.js"
+            charset="utf-8"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.2.7/raphael.min.js" charset="utf-8"></script>
+    <script src="../jQuery-Mapael-2.2.0/js/jquery.mapael.min.js"></script>
+    <script src="js/china.js" charset="utf-8"></script>
+</head>
+<body>
+    <img src="images/15.jpg" alt="" style="position:absolute;z-index:-1;">
+    <div>
+        <div class="container">
+            <div class="map">Alternativ content</div>
+        </div>
+
+    </div>
+</body>
+<script>   
+    $(function () {
+        $(".container").mapael({
+            map: {
+                name: "china",
+                defaultArea: {
+                    attrs: {
+                        stroke: "#fff",
+                        "stroke-width": 1
+                    }
+                }
+            },
+            
+        });
+    });
+</script>
+<script>
+    $(document).
+  on('click', '.area', function() {
+    if(this.class!=".area.clicked"){
+
+        this.class=".area.clicked";
+        this.style.fill="#ff0000";
+    }
+    else{
+        this.class=".area";
+        this.style.fill="";
+    }
+  });
+  /*$(document).
+  on('click', '.area', function() {
+  this.style.fill=
+    });*/
+</script>
+</html>
